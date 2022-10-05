@@ -43,6 +43,7 @@ public class Calcolatrice {
     }
     public float potenza(float x,float y)
     {
+        //commento
         return (float) Math.pow(getX(),getY());
     }
 
