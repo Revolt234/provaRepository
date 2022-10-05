@@ -29,7 +29,7 @@ int z;
                 default:
                     if(z!=0)
                     {
-                        System.err.println("Nessuna opzione del cazzo selezionata");
+                        System.err.println("Nessuna opzione  selezionata");
                     }
             }
 
