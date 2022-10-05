@@ -7,14 +7,15 @@ public class Main {
         float x,y;
 int z;
         System.out.println("Benvenuto amico\n");
-        Scanner s=new Scanner(System.in);
-        System.out.println("inserire due valori numerici");
-        x=s.nextFloat();
-        y=s.nextFloat();
-        Calcolatrice c= new Calcolatrice(x,y);
-        System.out.println(c);
-        do {
 
+
+        do {
+            Scanner s=new Scanner(System.in);
+            System.out.println("inserire due valori numerici");
+            x=s.nextFloat();
+            y=s.nextFloat();
+            Calcolatrice c= new Calcolatrice(x,y);
+            System.out.println(c);
             System.out.println("0 finisce\n1 addizione\n2 sottrazione\n3 moltiplicazione\n4 divisione");
             z=s.nextInt();
             switch (z)
