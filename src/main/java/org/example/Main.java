@@ -7,6 +7,7 @@ public class Main {
         float x,y;
 int z;
 
+
         System.out.println("Benvenuto fratello\n");
 Scanner s=new Scanner(System.in);
 
@@ -25,6 +26,7 @@ Scanner s=new Scanner(System.in);
 
             System.out.println("0 finisce\n1 addizione\n2 sottrazione\n3 moltiplicazione\n4 divisione\n5 potenza");
 
+
             z=s.nextInt();
             switch (z)
             {
@@ -36,7 +38,10 @@ Scanner s=new Scanner(System.in);
                 break;
                 case 4: System.out.println(c.divisione(c.getX(),c.getY()));
                 break;
-                case 5:System.out.println(c.potenza(c.getX(), c.getY()));
+
+                case 5:
+                    System.out.println(c.potenza(c.getX(),c.getY()));
+
                     break;
                 default:
                     if(z!=0)
