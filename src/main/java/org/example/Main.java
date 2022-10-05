@@ -29,11 +29,12 @@ int z;
                 default:
                     if(z!=0)
                     {
-                        System.err.println("Nessuna opzione  selezionata");
+                        System.err.println("Nessuna opzione selezionata ");
                     }
             }
 
         }
         while(z!=0);
+        System.out.println("Arrivederci");
     }
 }
