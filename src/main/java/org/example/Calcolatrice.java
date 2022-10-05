@@ -47,6 +47,12 @@ public class Calcolatrice {
         return (float) Math.pow(getX(),getY());
     }
 
+    public float potenza(float x,float y)
+    {
+        return (float) Math.pow(getX(),getY());
+    }
+
+
     @Override
     public String toString() {
         return "x="+getX()+" y="+getY()+"\n";
