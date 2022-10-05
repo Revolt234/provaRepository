@@ -1,7 +1,39 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        float x,y;
+int z;
+        Scanner s=new Scanner(System.in);
+        System.out.println("inserire due valori numerici");
+        x=s.nextFloat();
+        y=s.nextFloat();
+        Calcolatrice c= new Calcolatrice(x,y);
+        System.out.println(c);
+        do {
+
+            System.out.println("0 finisce\n1 addizione\n2 sottrazione\n3 moltiplicazione\n4 divisione");
+            z=s.nextInt();
+            switch (z)
+            {
+                case 1: System.out.println(c.somma(c.getX(),c.getY()));
+                break;
+                case 2:System.out.println(c.sottrazione(c.getX(),c.getY()));
+                    break;
+                case 3: System.out.println(c.moltiplicazione(c.getX(),c.getY()));
+                break;
+                case 4: System.out.println(c.divisione(c.getX(),c.getY()));
+                break;
+                default:
+                    if(z!=0)
+                    {
+                        System.err.println("Nessuna opzione selezionata");
+                    }
+            }
+
+        }
+        while(z!=0);
     }
 }
