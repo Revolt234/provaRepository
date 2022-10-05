@@ -35,6 +35,6 @@ int z;
 
         }
         while(z!=0);
-        System.out.println("Arrivederci pollo pull request ");
+        System.out.println("Arrivederci pollo ");
     }
 }
