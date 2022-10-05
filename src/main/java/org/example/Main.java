@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         float x,y;
-int z;
-        System.out.println("Benvenuto vaccaro3\n");
+        int z;
+        System.out.println("Benvenuto caro\n");
 
 
         do {
@@ -21,13 +21,13 @@ int z;
             switch (z)
             {
                 case 1: System.out.println(c.somma(c.getX(),c.getY()));
-                break;
+                    break;
                 case 2:System.out.println(c.sottrazione(c.getX(),c.getY()));
                     break;
                 case 3: System.out.println(c.moltiplicazione(c.getX(),c.getY()));
-                break;
+                    break;
                 case 4: System.out.println(c.divisione(c.getX(),c.getY()));
-                break;
+                    break;
                 case 5:
                     System.out.println(c.potenza(c.getX(),c.getY()));
                     break;
