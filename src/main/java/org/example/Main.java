@@ -6,15 +6,17 @@ public class Main {
     public static void main(String[] args) {
         float x,y;
 int z;
-        Scanner s=new Scanner(System.in);
-        System.out.println("inserire due valori numerici");
-        x=s.nextFloat();
-        y=s.nextFloat();
-        Calcolatrice c= new Calcolatrice(x,y);
-        System.out.println(c);
-        do {
+        System.out.println("Benvenuto vaccaro\n");
 
-            System.out.println("0 finisce\n1 addizione\n2 sottrazione\n3 moltiplicazione\n4 divisione");
+
+        do {
+            Scanner s=new Scanner(System.in);
+            System.out.println("inserire due valori numerici");
+            x=s.nextFloat();
+            y=s.nextFloat();
+            Calcolatrice c= new Calcolatrice(x,y);
+            System.out.println(c);
+            System.out.println("0 finisce\n1 addizione\n2 sottrazione\n3 moltiplicazione\n4 divisione\n5 potenza");
             z=s.nextInt();
             switch (z)
             {
@@ -26,6 +28,9 @@ int z;
                 break;
                 case 4: System.out.println(c.divisione(c.getX(),c.getY()));
                 break;
+                case 5:
+                    System.out.println(c.potenza(c.getX(),c.getY()));
+                    break;
                 default:
                     if(z!=0)
                     {
