@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         float x,y;
 int z;
-        System.out.println("Benvenuto amico\n");
+        System.out.println("Benvenuto fratello\n");
 
 
         do {
