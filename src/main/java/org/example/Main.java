@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         float x,y;
 int z;
+        System.out.println("Benvenuto amico\n");
         Scanner s=new Scanner(System.in);
         System.out.println("inserire due valori numerici");
         x=s.nextFloat();
